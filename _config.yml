@@ -1,5 +1,5 @@
 title: "North Shore Business Development Foundation"
-baseurl: ""
+baseurl: "nsbdf.org/"
 sass:
     sass_dir: _sass
     style: :compressed
