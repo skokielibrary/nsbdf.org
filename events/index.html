@@ -4,5 +4,6 @@ layout: base
 ---
 
 {% for post in site.posts reversed %}
-  {{ post.title }}
+  <h3><a href="{{ post.url | prepend: baseurl }}">{{ post.title}}</a></h3>
+  <p>{{ post.datetime }}</p>
 {% endfor %}

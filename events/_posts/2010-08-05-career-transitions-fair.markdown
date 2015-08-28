@@ -1,6 +1,7 @@
 ---
 title: "Career Transitions Fair"
 layout: page
+datetime: "Thursday, 08/05/2010 - 9:00am - 12:30pm"
 ---
 
 Interface with professionals who can offer advice and resources to assist in your job search. Resume critiques and filmed interviewing assessments available.
