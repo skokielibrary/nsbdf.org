@@ -13,7 +13,7 @@ $blue: #2388BC;
 
 body{
   margin: 0;
-  padding: 0;
+  padding: 0 0 2rem 0;
   background-color: $blue;
   font: 400 16px/1.5 'Source Sans Pro', sans-serif;
   color: $black;
@@ -21,24 +21,26 @@ body{
 
 a, a:visited, a:active{
   color: $blue;
+  transition: color .2s ease;
 }
 
 a:hover{
-  border-bottom: 2px solid $blue;
+  color: darken($blue, 20%);
 }
 
-h1, h2,h3,h4,h5,h6{
-  font-weight: 400;
+h1,h2,h3,h4,h5,h6{
   margin-bottom: .2em;
+  font-weight: 400;
+  line-height: 1.2;
   color: $blue;
-}
-
-h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type{
-  margin-top: 0;
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a{
   text-decoration: none;
+}
+
+h2 + h3{
+  margin-top: .5em;
 }
 
 p{
@@ -49,7 +51,7 @@ p{
   position: relative;
   max-width: 64rem;
   margin: 0 auto;
-  padding: 2rem 10px;
+  padding: 2rem 1rem;
 }
 
 header{
@@ -81,6 +83,10 @@ nav{
       display: inline-block;
       margin-left: 1.5rem;
 
+      @media screen and (max-width: 35rem){
+        margin: 0 .8rem;
+      }
+
       a{
         text-decoration: none;
         letter-spacing: .5px;
@@ -95,10 +101,14 @@ main{
   article{
     max-width: 38.4rem;
 
-    h1{
+    h1:first-child{
+      margin-top: 0;
       font-size: 2.5rem;
       text-transform: uppercase;
-      color: $green;
+    }
+
+    h2:first-child{
+      margin-top: 0;
     }
 
     ul{
@@ -111,26 +121,50 @@ main{
   }
 }
 
+.event-section{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
 footer{
+  overflow: hidden;
   color: $white;
+
+  @media screen and (max-width: 35rem){
+    text-align: center;
+  }
 
   .vcard{
     float: left;
     width: 50%;
+
+    @media screen and (max-width: 35rem){
+      float: none;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
   }
 
   .partners{
     float: right;
 
     @media screen and (max-width: 35rem){
-      float: left;
-      width: 50%;
+      float: none;
+    }
+  }
+
+  .partner-logo{
+    display: inline-block;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 35rem){
+      display: block;
+      margin-left: 0;
     }
 
-    img{
-      display: inline-block;
-      margin-left: 2rem;
-      margin-bottom: 2rem;
-    }
   }
 }
