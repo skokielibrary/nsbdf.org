@@ -10,7 +10,7 @@ Skokie Public Library
 Cole Taylor Bank
 
 ### Barry Itzkowitz, Treasurer
-SLSF
+BDO USA, LLP
 
 ### Howard Meyer, Secretary
 Skokie Chamber of Commerce

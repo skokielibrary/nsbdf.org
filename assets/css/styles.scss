@@ -1,9 +1,9 @@
 ---
 ---
 $gray: #ccc;
-$light-gray: #f0f0f0;
+$light-gray: #f7f7f7;
 $white: #fff;
-$black: #4A4A4A;
+$black: #333;
 $green: #1E9586;
 $blue: #2388BC;
 
@@ -14,8 +14,8 @@ $blue: #2388BC;
 body{
   margin: 0;
   padding: 0 0 2rem 0;
-  background-color: $blue;
-  font: 400 16px/1.5 'Source Sans Pro', sans-serif;
+  background-color: darken($blue, 5%);
+  font: 400 17px/1.6 'Source Sans Pro', sans-serif;
   color: $black;
 }
 
@@ -107,6 +107,7 @@ main{
 
     h1:first-child{
       margin-top: 0;
+      margin-bottom: 2rem;
       font-size: 2.5rem;
       text-transform: uppercase;
     }
